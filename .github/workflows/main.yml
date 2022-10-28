@@ -5,8 +5,6 @@ on: [push] # what event does this workflow run with?
 env:
  GLOBAL_VAR: "This is public!"
 
-env:
- LOCAL_VAR: "This is private!"
 
 env:
  SECRET_TEXT: ${{ secrets.SUPER_SECRET_TEXT }}
@@ -50,8 +48,6 @@ jobs:
    steps:
    - name: Printing Global Varaible...
      run: echo $GLOBAL_VAR
-   - name: Printing Local Variable...
-     run: echo $LOCAL_VAR
    - name: Printing Secret Text...
      run: $SECRET_TEXT
 
