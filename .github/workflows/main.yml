@@ -22,7 +22,7 @@ jobs:
     - name: List Contents of Current Directory..
       run: ls -al
     - name: Run a python script
-      run: pyhton script.py
+      run: python script.py
 
 
 
