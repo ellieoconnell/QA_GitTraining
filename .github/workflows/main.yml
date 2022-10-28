@@ -14,15 +14,15 @@ jobs:
 
 #this code focuses on cloning my repo
 
-clone_demo:
- runs-on: ubuntu-latest
- steps:
-  - name: Check Out Repo...
-    uses: actions/checkout@v3
-  - name: List Contents of Current Directory..
-    run: ls -al
-  - name: Run a python script
-    run: pyhton script.py
+  clone_demo:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Check Out Repo...
+      uses: actions/checkout@v3
+    - name: List Contents of Current Directory..
+      run: ls -al
+    - name: Run a python script
+      run: pyhton script.py
 
 
 
