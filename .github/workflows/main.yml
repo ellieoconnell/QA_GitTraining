@@ -1,6 +1,14 @@
 name: GitActions Demo
 on: [push] # what event does this workflow run with?
 
+
+env:
+  GLOBAL_VAR: "This is public!"
+
+env:
+  LOCAL_VAR: "This is private!"
+
+  
 jobs:
   action_demo:
     # runs-on is what type of OS is our pipeline running on
@@ -34,6 +42,8 @@ jobs:
    - name: Run a bash script
      run: bash script.sh
 
+
+  
 
 
    
