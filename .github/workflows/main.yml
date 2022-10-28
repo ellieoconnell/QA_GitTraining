@@ -8,9 +8,9 @@ jobs:
    runs-on: ubuntu-latest
     # what do I want the job to do?
    steps:
-   - run: echo < "Hello World!"
+   - run: echo "Hello World!"
    - run: pwd
    - run: ls
-   - run: echo < 'Job Status is ${{job.status}}'
+   - run: echo 'Job Status is ${{job.status}}'
    
    
