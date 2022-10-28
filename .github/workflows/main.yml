@@ -3,7 +3,7 @@ on: [push] # what event does this workflow run with?
 
 
 env:
- LOCAL_VAR: "This is local!"
+  LOCAL_VAR: "This is local!"
 
 
 jobs:
