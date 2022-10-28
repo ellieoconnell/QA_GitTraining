@@ -1,12 +1,12 @@
 
 name: GitActions Demo
-on: [push] #what event does this workflow run with?
+on: [push] # what event does this workflow run with?
 
 jobs:
   action_demo:
-  # runs-on is what type of OS is our pipeline running on
+    # runs-on is what type of OS is our pipeline running on
    runs-on: ubuntu-latest
-  # what do I want the job to do?
+    # what do I want the job to do?
    steps:
    - run "Hello World!"
    - run pwd
