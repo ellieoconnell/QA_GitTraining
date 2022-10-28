@@ -29,11 +29,11 @@ jobs:
    steps:
    - name: Check Out Repo...
      uses: actions/checkout@v3
-  - name: List Contents of Current Directory..
+   - name: List Contents of Current Directory..
      run: ls -al
-  - name: Run a bash script
-    run: bash script.sh
+   - name: Run a bash script
+     run: bash script.sh
 
-    
+
 
    
