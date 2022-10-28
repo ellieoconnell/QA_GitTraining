@@ -3,10 +3,6 @@ on: [push] # what event does this workflow run with?
 
 
 env:
- GLOBAL_VAR: "This is public!"
-
-
-env:
  SECRET_TEXT: ${{ secrets.SUPER_SECRET_TEXT }}
 
 
@@ -46,8 +42,6 @@ jobs:
   variable_job:
    runs-on: ubuntu-latest
    steps:
-   - name: Printing Global Varaible...
-     run: echo $GLOBAL_VAR
    - name: Printing Secret Text...
      run: $SECRET_TEXT
 
